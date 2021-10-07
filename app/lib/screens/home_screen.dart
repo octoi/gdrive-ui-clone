@@ -1,4 +1,5 @@
 import 'package:app/utils/constants.dart';
+import 'package:app/widgets/body.dart';
 import 'package:app/widgets/bottom.dart';
 import 'package:app/widgets/fab.dart';
 import 'package:app/widgets/header.dart';
@@ -9,11 +10,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
+    return const DefaultTabController(
       length: 2,
       child: Scaffold(
         backgroundColor: appBgColor,
         appBar: Header(),
+        body: Body(),
         floatingActionButton: Fab(),
         bottomNavigationBar: Bottom(),
       ),
